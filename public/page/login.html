@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录页面</title>
+    <link rel="stylesheet" href="/css/wutong.css">
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            /* 淡淡的浅灰色背景 */
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .wu_login-container {
+            background-color: #fdfdfd;
+            /* 奶白色 */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* 带点阴影 */
+            padding: 20px;
+            border-radius: 5px;
+            width: 300px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #eea6c8;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .wu_wu_error-message {
+            color: red;
+            margin-top: -5px;
+            margin-bottom: 10px;
+            display: none;
+        }
+    </style>
+    <div class="wu_login-container">
+        <h2>欢迎登录</h2>
+        <form id="wu_loginForm">
+            <input type="email" id="email" placeholder="用户邮箱" required>
+            <input type="password" id="password" placeholder="密码" required>
+            <span id="wu_error-message" class="wu_error-message"></span>
+            <button type="submit">提交</button>
+        </form>
+    </div>
+    <script>
+        const wu_loginForm = document.getElementById('wu_loginForm');
+        const emailInput = document.getElementById('email');
+        const passwordInput = document.getElementById('password');
+        const errorMessage = document.getElementById('wu_error-message');
+
+        wu_loginForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const emailValue = emailInput.value;
+            const passwordValue = passwordInput.value;
+
+            if (!isValidEmail(emailValue)) {
+                showErrorMessage('请输入正确的邮箱格式');
+                return;
+            }
+
+            if (passwordValue.length < 6) {
+                showErrorMessage('密码长度不能少于6位');
+                return;
+            }
+
+            if (emailValue != 'admin@163.com' || passwordValue != 'admin123') {
+                //登录出错
+                showErrorMessage('用户名或密码可能存在错误');
+                return;
+            }
+
+            const expires = new Date();
+            expires.setDate(expires.getDate() + 1);  // 设置为1天后过期
+
+            document.cookie = `userid=${emailValue};expires=${expires.toGMTString()};path=/`;
+
+            // 验证通过先隐藏错误提示
+            hideErrorMessage();
+            window.location.href = '/index.html';
+        });
+
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+        function showErrorMessage(message) {
+            errorMessage.textContent = message;
+            errorMessage.style.display = 'block';
+        }
+
+        function hideErrorMessage() {
+            errorMessage.style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>

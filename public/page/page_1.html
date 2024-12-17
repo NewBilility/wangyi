@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/wutong.css">
+    <link rel="stylesheet" href="/font/iconfont.css">
+    <link rel="stylesheet" href="/swiper/swiper-bundle.min.css">
+
+    <script src="/swiper/swiper-bundle.min.js"></script>
+
+    <title>大连新闻</title>
+
+</head>
+
+<body>
+    <style>
+        #wu_nav-head a:hover {
+            color: rgb(72, 3, 3);
+        }
+
+        #wu_big-header-title div {
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 20px;
+        }
+
+        #wu_big-header-title div:hover {
+            background-color: red;
+        }
+
+        #wu_big-header-title div:hover a {
+            color: white;
+        }
+
+        #wu_col-2 .wu_col-2-item {
+            display: flex;
+            gap: 10px;
+            border-bottom: solid 1px rgb(174, 174, 174);
+            padding-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        #wu_col-2 .wu_col-2-item h3 {
+            font-weight: lighter;
+            margin-top: 4px;
+        }
+
+        #wu_col-2 .wu_col-2-item span {
+            font-size: 13px;
+            color: gray;
+        }
+
+        #wu_col-2 .wu_col-2-item .item-add-info {
+            display: flex;
+            justify-content: space-between;
+            ;
+        }
+
+        #wu_col-3 ul {
+            padding-left: 10px;
+        }
+
+        #wu_col-3 a {
+            font-size: 12px;
+            color: #333333;
+        }
+
+        #wu_col-3 li:hover {
+            transform: translateX(5px);
+            transition: 0.5s;
+        }
+
+        #wu_col-3 a:hover {
+            color: red;
+        }
+    </style>
+    <header>
+        <div id="wu_nav" style="background-color: #333333; display: flex; position: fixed;
+      top: 0;
+      left: 0; 
+      z-index: 999; width: 100%; justify-content: space-between; ">
+            <div id="wu_nav1" style="width: 500px; ">
+                <ul style="display:flex; color: aliceblue; list-style: none; gap: 20px;">
+                    <li>
+                        <a href="/">网易首页</a>
+                    </li>
+                    <li>
+                        <a href="">应用</a>
+
+                    </li>
+                    <li>
+                        <a href="">无障碍浏览</a>
+                    </li>
+                    <li>
+                        <a href="">进入关怀</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="wu_nav2" style="width: 500px;  ">
+                <ul style="display:flex; color: aliceblue; list-style: none; gap: 20px;">
+                    <li>
+                        <a href=""><i><span class="iconfont icon-phone"></span></i>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">公开课</a>
+                    </li>
+                    <li>
+                        <a href="">严选</a>
+
+                    </li>
+                    <li>
+                        <a href=""><i><span class="iconfont icon-shop"></span>
+                            </i>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="">欢迎，admin</a>
+                    </li>
+
+                    <li>
+                        <a href="">注册免费邮箱</a>
+                    </li>
+
+                    <li>
+                        <a href=""><i><span class="iconfont icon-bars"></span>
+                            </i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div id="wu_main-content-1" style="margin: 20px auto; width: 1200px; padding-top: 40px; ">
+            <div id="wu_nav-head" style="margin: 10px auto;">
+                <ul style="display: flex; padding: 0; justify-content: space-around;">
+                    <li><a href="">新闻</a></li>
+                    <li><a href="">体育</a></li>
+                    <li><a href="">娱乐</a></li>
+                    <li><a href="">社会</a></li>
+                    <li><a href="">财经</a></li>
+                    <li><a href="">股票</a></li>
+                    <li><a href="">国际</a></li>
+                    <li><a href="">三农</a></li>
+                    <li><a href="">新闻</a></li>
+                    <li><a href="">新闻</a></li>
+                    <li><a href="">新闻</a></li>
+                    <li><a href="">新闻</a></li>
+                </ul>
+            </div>
+            <div id="wu_head-log">
+                <img src="/pic/3.png" alt="" srcset="">
+
+                <span style="margin-left: 900px; color: red;  vertical-align: super; font-size: larger;">
+                    <span class="iconfont icon-local"></span>
+                    城市选择
+                </span>
+            </div>
+        </div>
+        <div id="wu_big-header" style="border-top: 3px solid red; margin: 10px auto;">
+            <div id="wu_big-header-title"
+                style="width: 1200px;margin: 0 auto; display: grid;   grid-template-columns: auto auto auto auto auto auto;">
+                <div>
+                    <span><a href="/">首页</a></span>
+                </div>
+                <div>
+                    <span><a href="/page/page_2.html">直播</a></span>
+                </div>
+                <div>
+                    <span><a href="">图片</a></span>
+                </div>
+                <div>
+                    <span><a href="">个人号</a></span>
+                </div>
+                <div>
+                    <span><a href="">专题</a></span>
+                </div>
+                <div>
+                    <span><a href="">金融</a></span>
+                </div>
+            </div>
+        </div>
+        <div id="wu_big-slide" style="width: 1200px; margin: 10px auto;">
+            <div id="wu_lunbo" class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="display: flex; justify-content: center;">
+                        <div>
+                            <img src="/pic/xuehua.jpeg" width="800px" height="400px" alt="" srcset="">
+                        </div>
+                        <div>
+                            <img src="/pic/jnd.jpeg" style="display: block;" height="200px" alt="" srcset="">
+                            <img src="/pic/qwfb.jpeg" style="display: block;" height="200px" alt="" srcset="">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide" style="display: flex; justify-content: center;">
+                        <div>
+                            <img src="/pic/xz.jpeg" width="800px" height="400px" alt="" srcset="">
+                        </div>
+                        <div>
+                            <img src="/pic/sg.jpeg" style="display: block;" height="200px" alt="" srcset="">
+                            <img src="/pic/sp.png" style="display: block;" height="200px" alt="" srcset="">
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev"
+                    style="color: #333333; background-color: #F6F6F6; margin-left: 30px; opacity: 0.4;">
+                </div>
+                <div class="swiper-button-next"
+                    style="color: #333333;background-color: #F6F6F6; margin-right: 30px; opacity: 0.4;"></div>
+
+            </div>
+        </div>
+        <div id="wu_main-content-2" style=" width: 1200px; margin: 0 auto; display: flex;">
+
+            <div id="wu_col-1" style="width: 200px; ">
+                <div id="wu_col-1-title" style="border-left: solid red 3px; padding-left: 10px;">
+                    <h2>热点栏目</h2>
+                </div>
+
+                <div id="wu_col-1-item">
+                    <div style=" padding: 8px; border-top: solid rgb(198, 197, 197) 1px;">
+                        <div style="margin: 10px auto; text-align: center;">
+                            <img src="/pic/jiaoyu.jpg" alt="" srcset="">
+                        </div>
+                        <p>期末临近，面对焦虑，家长怎么办</p>
+                    </div>
+                    <div style=" padding: 8px; border-top: solid rgb(198, 197, 197) 1px;">
+                        <div style="margin: 10px auto; text-align: center;">
+                            <img src="/pic/jiaoyu.jpg" alt="" srcset="">
+                        </div>
+                        <p>大连要建方舱医院？看看真相
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="wu_col-2" style="width: 750px; margin-left: 20px;">
+
+            </div>
+
+            <div id="wu_col-3" style="width: 340px;  margin-left: 20px;">
+                <div id="wu_col-2-title" style="border-left: solid red 3px; padding-left: 10px;">
+                    <h2>"巾帼创业创新" 云课堂</h2>
+                </div>
+                <div>
+                    <ul id="wu_col-3-ul">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div id="wu_footer-content" style="background-color: #F6F6F6; padding-top: 20px;">
+            <div id="wu_footer-col">
+                <div class="wu_footer-news">
+                    <strong>
+                        <a href="" style="display: block;">新闻</a>
+                    </strong>
+                    <a href="">国内新闻</a>
+                    <a href="">国际新闻</a>
+                    <a href="">本地新闻</a>
+                    <a href="">军事新闻</a>
+                </div>
+                <div class="wu_footer-news">
+                    <strong>
+                        <a href="" style="display: block;">娱乐</a>
+                    </strong>
+                    <a href="">国内新闻</a>
+                    <a href="">国际新闻</a>
+                    <a href="">本地新闻</a>
+                    <a href="">军事新闻</a>
+                </div>
+                <div class="wu_footer-news">
+                    <strong>
+                        <a href="" style="display: block;">体育</a>
+                    </strong>
+                    <a href="">国内新闻</a>
+                    <a href="">国际新闻</a>
+                    <a href="">本地新闻</a>
+                    <a href="">军事新闻</a>
+                </div>
+                <div class="wu_footer-news">
+                    <strong>
+                        <a href="" style="display: block;">科技</a>
+                    </strong>
+                    <a href="">国内新闻</a>
+                    <a href="">国际新闻</a>
+                    <a href="">本地新闻</a>
+                    <a href="">军事新闻</a>
+                </div>
+                <div class="wu_footer-news">
+                    <strong>
+                        <a href="" style="display: block;">社会</a>
+                    </strong>
+                    <a href="">国内新闻</a>
+                    <a href="">国际新闻</a>
+                    <a href="">本地新闻</a>
+                    <a href="">军事新闻</a>
+                </div>
+            </div>
+            <div id="wu_footer-ul" style="background-color: #333333; ">
+                <ul style="display: flex; margin: 0 auto; width: 800px; justify-content: space-around;">
+                    <li> <a href=""> 公司简介</a></li>
+                    <li> <a href=""> 联系方法</a></li>
+                    <li> <a href=""> 招聘信息</a></li>
+                    <li> <a href=""> 客户服务</a></li>
+                    <li> <a href=""> 隐私政策</a></li>
+                    <li> <a href=""> 廉政举报</a></li>
+                    <li> <a href=""> @版权xxxxxx copyright 2024</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const col3Arr = [
+            '战疫情·她力量—共话疫情中女性力量访谈',
+            '战疫情·她力量—共话疫情中女性力量访谈',
+            '战疫情·她力量—共话疫情中女性力量访谈',
+            '战疫情·她力量—共话疫情中女性力量访谈',
+            '战疫情·她力量—共话疫情中女性力量访谈',
+            '战疫情·她力量—共话疫情中女性力量访谈',
+        ]
+        let ulElement = document.querySelector('#wu_col-3-ul');
+        col3Arr.forEach((item) => {
+            const itemAStr = `<li><a href="">${item}</a></li>`
+            let itemAHtml = document.createElement('li');
+            itemAHtml.innerHTML = itemAStr;
+            ulElement.appendChild(itemAHtml);
+        })
+
+        const contenArr = [
+            {
+                'title': "甘区司法局获评全国“八五”普法中期表现突出的单位",
+                'pic_path': 'gz.jpg'
+            },
+            {
+                'title': "甘区司法局获评全国“八五”普法中期表现突出的单位",
+                'pic_path': 'gz.jpg'
+            },
+            {
+                'title': "甘区司法局获评全国“八五”普法中期表现突出的单位",
+                'pic_path': 'gz.jpg'
+            },
+            {
+                'title': "甘区司法局获评全国“八五”普法中期表现突出的单位",
+                'pic_path': 'gz.jpg'
+            },
+            {
+                'title': "甘区司法局获评全国“八五”普法中期表现突出的单位",
+                'pic_path': 'gz.jpg'
+            },
+            {
+                'title': "甘区司法局获评全国“八五”普法中期表现突出的单位",
+                'pic_path': 'gz.jpg'
+            }
+        ]
+
+
+        const divElement = document.querySelector('#wu_col-2');
+
+        contenArr.forEach((item) => {
+
+            const htmlItem = `<div class="wu_col-2-item">
+                    <div>
+                        <img src="/pic/${item.pic_path}" width="140px" height="88px" alt="">
+                    </div>
+                    <div>
+                        <div>
+                            <h3><a href="">${item.title}</a></h3>
+                        </div>
+                        <div class="item-add-info">
+                            <div>
+                                <span>15小时前</span>
+                            </div>
+                            <div>
+                                <span><span class="iconfont icon-share"></span>
+                                </span>
+                                <span><span class="iconfont icon-write"></span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>`
+            let divItem = document.createElement('div');
+            divItem.innerHTML = htmlItem;
+            divElement.appendChild(divItem);
+        })
+
+
+
+        //第一个轮播图
+        var mySwiper = new Swiper('#wu_lunbo', {
+            direction: 'horizontal', // 垂直切换选项
+            loop: true, // 循环模式选项
+
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            autoplay: {
+                delay: 3000,
+            }
+        })
+    </script>
+</body>
+
+</html>
