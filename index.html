@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>首页</title>
+  <link rel="stylesheet" href="/css/wutong.css">
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/swiper/swiper-bundle.min.css">
+  <script src="/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<style>
+  .wu_news-title-active {
+    color: red;
+  }
+
+  #wu_news-info-total ul li a:hover {
+    color: red;
+  }
+
+  #wu_news-info-local ul li a:hover {
+    color: red;
+  }
+
+  #wu_product-icon li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+  }
+
+  #wu_product-icon li a .iconfont {
+    font-size: 30px;
+  }
+
+  #wu_taotao-title li {
+    margin-top: 5px;
+  }
+
+  #wu_taotao-title li a:hover {
+    color: red;
+  }
+
+  img:hover {
+    transform: scale(1.1);
+    transition: 0.8s;
+  }
+
+  .wu_gkk-pic h5 {
+    margin-top: 2px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: floralwhite;
+    background-color: #515151;
+    opacity: 0.3;
+    display: none;
+  }
+</style>
+
+<body>
+
+  <header>
+    <div id="wu_nav" style="background-color: #333333; display: flex; position: fixed;
+  top: 0;
+  left: 0; 
+  z-index: 999; width: 100%; justify-content: space-between; ">
+      <div id="wu_nav1" style="width: 500px; ">
+        <ul style="display:flex; color: aliceblue; list-style: none; gap: 20px;">
+          <li>
+            <a href="">网易首页</a>
+          </li>
+          <li>
+            <a href="">应用</a>
+
+          </li>
+          <li>
+            <a href="">无障碍浏览</a>
+          </li>
+          <li>
+            <a href="">进入关怀</a>
+          </li>
+        </ul>
+      </div>
+      <div id="wu_nav2" style="width: 500px;  ">
+        <ul style="display:flex; color: aliceblue; list-style: none; gap: 20px;">
+          <li>
+            <a href=""><i><span class="iconfont icon-phone"></span></i>
+
+            </a>
+          </li>
+          <li>
+            <a href="">公开课</a>
+          </li>
+          <li>
+            <a href="">严选</a>
+
+          </li>
+          <li>
+            <a href=""><i><span class="iconfont icon-shop"></span>
+              </i>
+            </a>
+
+          </li>
+          <li>
+            <a href="">欢迎，admin</a>
+          </li>
+
+          <li>
+            <a href="">注册免费邮箱</a>
+          </li>
+
+          <li>
+            <a href=""><i><span class="iconfont icon-bars"></span>
+              </i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+    <div id="wu_main-content" style="margin: 20px auto; width: 1200px;  ">
+      <div id="wu_head-1" style="display: flex; border-bottom: solid 2px red; padding-top: 45px;">
+        <div id="wu_log-1">
+          <img src="/pic/1.png" alt="">
+        </div>
+        <div id="wu_log-2" style="margin-left: auto;">
+          <img src="/pic/2.png" alt="">
+        </div>
+      </div>
+
+      <div id="wu_head-nav" style="margin-top: 20px; ">
+        <ul style="display: flex; justify-content: space-around;">
+          <li class="wu_nav-li">
+            <a href="/page/page_3.html">新闻</a>
+            <a href="">军事</a>
+            <a href="/page/page_4.html">国内</a>
+            <a href="">航空</a>
+            <a href="">娱乐</a>
+            <a href="">电影</a>
+            <a href="">音乐</a>
+            <a href="">故事</a>
+          </li>
+          <li class="wu_nav-li">
+            <a href="">新闻</a>
+            <a href="">军事</a>
+            <a href="">国内</a>
+            <a href="">航空</a>
+            <a href="">娱乐</a>
+            <a href="">电影</a>
+            <a href="">音乐</a>
+            <a href="">故事</a>
+          </li>
+          <li class="wu_nav-li"><a href="">新闻</a>
+            <a href="">军事</a>
+            <a href="">国内</a>
+            <a href="">航空</a>
+            <a href="">娱乐</a>
+            <a href="">电影</a>
+            <a href="">音乐</a>
+            <a href="">故事</a>
+          </li>
+          <li class="wu_nav-li"><a href="">新闻</a>
+            <a href="">军事</a>
+            <a href="">国内</a>
+            <a href="">航空</a>
+            <a href="">娱乐</a>
+            <a href="">电影</a>
+            <a href="">音乐</a>
+            <a href="">故事</a>
+          </li>
+          <li class="wu_nav-li"><a href="">新闻</a>
+            <a href="">军事</a>
+            <a href="">国内</a>
+            <a href="">航空</a>
+            <a href="">娱乐</a>
+            <a href="">电影</a>
+            <a href="">音乐</a>
+            <a href="">故事</a>
+          </li>
+        </ul>
+      </div>
+
+      <div id="wu_content-info" style="margin-top: 20px; display: flex; justify-content: space-around;">
+        <div id="wu_content-pic" style=" width: 380px;">
+          <div id="wu_lunbo" class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="text-align: center;">
+                <div>
+                  <img src="/pic/xx.jpg" alt="" title="">
+                </div>
+                <div>
+                  <img src="/pic/cx.jpg" alt="">
+                  <img src="/pic/zz.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img src="/pic/ysl.jpg" alt="">
+                </div>
+                <div>
+                  <img src="/pic/tc.jpg" alt="">
+                  <img src="/pic/yangzi.jpg" alt="">
+                </div>
+              </div>
+
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- 如果需要滚动条 -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+
+          <div id="wu_gongkaike" style="margin-top: 10px; border-top: 2px solid grey;">
+            <div id="wu_title">
+              <h3 style="margin-left: 8px;">
+                网易公开课</h3>
+            </div>
+            <div>
+              <div id="wu_lunbo2" class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="content">
+                      <div class="wu_gkk-pic" style="display: flex; justify-content: space-around;">
+                        <div>
+                          <img src="/pic/jt.jpg" width="180px" alt="" srcset="">
+                          <h5 style="text-align: center;">别上当，这些接头骗术</h5>
+                        </div>
+                        <div>
+                          <img src="/pic/cq.jpg" width="180px" alt="" srcset="">
+                          <h5 style="text-align: center;">怎样存钱</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="content">
+                      <div class="wu_gkk-pic" style="display: flex; justify-content: space-around;">
+                        <div>
+                          <img src="/pic/ht.jpg" width="180px" alt="" srcset="">
+                          <h5 style="text-align: center;">脸皮厚的最新形容词--河豚</h5>
+                        </div>
+                        <div>
+                          <img src="/pic/nc.jpg" width="180px" alt="" srcset="">
+                          <h5 style="text-align: center;">尼采：怎样过真实的生活</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-pagination-2" style="display: flex;
+                justify-content: center;
+                align-items: center; margin-bottom: 10px;"></div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <div id="wu_content-news " style=" width: 400px; border-top: solid 1px gainsboro;">
+          <div id="wu_news-tab">
+            <ul style="display: flex; gap: 20px; padding: 5px; margin-top:2px; margin-left: 20px; ">
+              <li>
+                <span><a class="news-title" id="news-title-1" href="" style="font-size: 20px;">要闻</a></span>
+              </li>
+              <li>
+                <span><a class="news-title" id="news-title-2" href="/page/page_1.html"
+                    style="font-size: 20px;">大连要闻</a></span>
+              </li>
+            </ul>
+          </div>
+
+          <div id="wu_news-info-total" style="margin-top: 10px;">
+            <ul style="padding-left: 15px;">
+              <li>
+                <a href="" style="font-weight: bolder;">重磅微视频丨总书记引领中国经济航船破浪前行</a>
+              </li>
+              <li>
+                <a href="" style="font-weight: bolder;">总书记心系高质量发展 新质生产力稳步发展</a>
+              </li>
+              <li><a href="">专题丨新思想引领新时代改革开放</a></li>
+              <li><a href="">市场规模扩增！11月中国快递发展指数同比增长14.2%</a></li>
+              <li><a href="">重量级 近距离！一组高清长图感受跨海通道魅力</a></li>
+              <li><a href="">新华鲜报丨破“一床难求” 我国多地试行“共享病床”</a></li>
+              <li><a href="">以加关税重振美国经济？专家：代价还得美国自己付</a></li>
+              <li><a href="">澳门回归祖国25周年｜维护国家安全 增进民生福祉</a></li>
+
+              <li style="margin-top: 5px;">
+                <a href="" style="font-weight: bolder; ">以军发动50年未有军事行动：叙利亚新政府或从零开始</a>
+              </li>
+
+              <li><a href="">普京:拥有足够数量的"榛树"导弹系统将无需使用核武器</a></li>
+              <li><a href="">媒体："逮捕尹锡悦"决议案只是个态度 不具备法律效力</a></li>
+              <li><a href="">百万粉丝女博主未带证件回民宿被拒 保安扬言"砍了你"</a></li>
+              <li><a href="">官方通报湖南一货车侧翻与客车相撞：造成16人受伤</a></li>
+
+              <li style="margin-top: 5px;">
+                <a href="" style="font-weight: bolder; ">公开课 | 李玫瑾：为什么性格比能力更重要？</a>
+              </li>
+              <li><a href="">谈心社 | “地表最强窝囊废”，把内娱吓坏了</a></li>
+              <li><a href="">媒体："逮捕尹锡悦"决议案只是个态度 不具备法律效力</a></li>
+              <li><a href="">药说漫话 | 预防艾滋，除了戴套还能做这件事</a></li>
+
+              <li style="margin-top: 5px;">
+                <a href="" style="font-weight: bolder; ">财经 | 韩文秀:政策新提法背后有很高含金量</a>
+              </li>
+              <li><a href="">科技 | 直击2024网易未来大会：AI如何改变我们</a></li>
+              <li><a href="">体育 | 购彩遭遇连黑如何调整？五点坏习惯要及时改正</a></li>
+              <li><a href="">网易号 | 挨骂的“老登电影”能让创作者清醒吗？</a></li>
+
+            </ul>
+          </div>
+
+          <div id="wu_news-info-local" style="margin-top: 10px; display: none;">
+            <ul style="padding-left: 15px;">
+              <li>
+                <a href="" style="font-weight: bolder;">大连铁路2025年春运外来工团体订票正式启动</a>
+              </li>
+              <li>
+                <a href="" style="font-weight: bolder;">为圆学生的马拉松梦，大连这所学校办了一场“河马...</a>
+              </li>
+              <li><a href="">很时尚、超出片！北电导演约你一起行走大连</a></li>
+
+              <li style="margin-top: 5px;">
+                <a href="" style="font-weight: bolder; ">致敬工匠！超30项精彩活动大连等你</a>
+              </li>
+
+              <li><a href="">新华社：筑梦大连，开启发展新征程</a></li>
+              <li><a href="">重磅！大连市教育局班子有调整</a></li>
+              <li><a href="">大连又将添一世界级新地标！</a></li>
+              <li><a href="">探索“AI+”无限可能！《赢在AI+》大连路演第二</a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="wu_content-product" style="width: 380px;">
+          <div id="wu_conten-search" style="margin-top:5px; text-align: center;">
+            <input type="text" placeholder="春运即将到来……" style="font-size: 18px; width: 300px; ">
+            <input type="button" value="搜索" style="font-size: 15px;">
+          </div>
+
+          <div id="wu_my-product" style="margin-top: 20px ; border:2px solid rgb(240, 238, 238);">
+            <div id="wu_my-product-tab" style="display: flex;">
+              <div class="tab-title"
+                style="border-top:2px solid red; color: red; width: 200px; text-align: center; font-size: 20px;background-color: white;">
+                <span>我的产品</span>
+              </div>
+              <div style="margin-left: auto; margin-right: 20px;">
+                <span>更多</span>
+              </div>
+            </div>
+            <div id="wu_product-icon">
+              <ul style="padding:0;display: flex; justify-content: space-around;">
+                <li>
+                  <a href=""><span class="iconfont icon-news"></span>
+                  </a>
+                  <span>每日新闻</span>
+                </li>
+                <li><a href="">
+                    <span class="iconfont icon-tv"></span>
+                  </a>公开课</li>
+                <li><a href="">
+                    <span class="iconfont icon-stock"></span>
+                  </a>股票</li>
+                <li><a href="">
+                    <span class="iconfont icon-mail"></span>
+                  </a>邮箱</li>
+              </ul>
+            </div>
+
+
+          </div>
+          <div id="wu_taotao" style="margin-top: 20px ; border:2px solid rgb(240, 238, 238);">
+            <div id="wu_taotao-tab" style="display: flex;">
+              <div class="wu_tab-title"
+                style="border-top:2px solid red; color: red; width: 200px; text-align: center; font-size: 20px;background-color: white;">
+                <span>桃桃故事会</span>
+              </div>
+              <div style="margin-left: auto; margin-right: 20px;">
+                <span>更多</span>
+              </div>
+            </div>
+            <div id="wu_taotao-title">
+              <ul style="padding-left:20px;">
+                <li>
+                  <a href="">守尸人无聊，半夜在太平间说评书，突...
+                  </a>
+
+                </li>
+                <li>
+                  <a href="">天涯神贴：749局揭秘异人世界？你听...
+                  </a>
+
+                </li>
+                <li>
+                  <a href="">我61岁，她43岁，洞房夜那晚我主动提...
+                  </a>
+
+                </li>
+                <li>
+                  <a href="">新婚夜上，妻子要将初次献给初恋，我...
+                  </a>
+
+                </li>
+                <li>
+                  <a href="">转学生自称苗疆圣女，污蔑我偷盗圣物...
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+  <footer>
+    <div id="wu_footer-content" style="background-color: #F6F6F6; padding-top: 20px;">
+      <div id="wu_footer-col">
+        <div class="wu_footer-news">
+          <strong>
+            <a href="" style="display: block;">新闻</a>
+          </strong>
+          <a href="">国内新闻</a>
+          <a href="">国际新闻</a>
+          <a href="">本地新闻</a>
+          <a href="">军事新闻</a>
+        </div>
+        <div class="wu_footer-news">
+          <strong>
+            <a href="" style="display: block;">娱乐</a>
+          </strong>
+          <a href="">国内新闻</a>
+          <a href="">国际新闻</a>
+          <a href="">本地新闻</a>
+          <a href="">军事新闻</a>
+        </div>
+        <div class="wu_footer-news">
+          <strong>
+            <a href="" style="display: block;">体育</a>
+          </strong>
+          <a href="">国内新闻</a>
+          <a href="">国际新闻</a>
+          <a href="">本地新闻</a>
+          <a href="">军事新闻</a>
+        </div>
+        <div class="wu_footer-news">
+          <strong>
+            <a href="" style="display: block;">科技</a>
+          </strong>
+          <a href="">国内新闻</a>
+          <a href="">国际新闻</a>
+          <a href="">本地新闻</a>
+          <a href="">军事新闻</a>
+        </div>
+        <div class="wu_footer-news">
+          <strong>
+            <a href="" style="display: block;">社会</a>
+          </strong>
+          <a href="">国内新闻</a>
+          <a href="">国际新闻</a>
+          <a href="">本地新闻</a>
+          <a href="">军事新闻</a>
+        </div>
+      </div>
+      <div id="wu_footer-ul" style="background-color: #333333; ">
+        <ul style="display: flex; margin: 0 auto; width: 800px; justify-content: space-around;">
+          <li> <a href=""> 公司简介</a></li>
+          <li> <a href=""> 联系方法</a></li>
+          <li> <a href=""> 招聘信息</a></li>
+          <li> <a href=""> 客户服务</a></li>
+          <li> <a href=""> 隐私政策</a></li>
+          <li> <a href=""> 廉政举报</a></li>
+          <li> <a href=""> @版权xxxxxx copyright 2024</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    let lunbo = document.querySelector('#wu_lunbo');
+    lunbo.addEventListener('mouseenter', () => {
+      let prevSwip = document.querySelector('.swiper-button-prev');
+      let nextSwip = document.querySelector('.swiper-button-next');
+
+      prevSwip.style.display = 'block';
+      nextSwip.style.display = 'block';
+
+    });
+
+    lunbo.addEventListener('mouseleave', () => {
+      console.log('hello');
+
+      let prevSwip = document.querySelector('.swiper-button-prev');
+      let nextSwip = document.querySelector('.swiper-button-next');
+
+      prevSwip.style.display = 'none';
+      nextSwip.style.display = 'none';
+
+    });
+
+    //检测是否登录
+    if (document.cookie.indexOf('userid') == -1) {
+      //  表示不存在
+      window.location.href = '/page/login.html';
+    }
+
+
+    //要闻 大连新闻颜色管控
+    // 获取所有.news-title元素
+    const newsTitles = document.querySelectorAll('.news-title');
+
+    // 循环添加鼠标事件监听器
+    newsTitles.forEach(title => {
+      title.addEventListener('mouseenter', function () {
+        console.log(this.id);
+
+        // 先移除所有元素的active类，确保只有当前悬停的元素变红
+        newsTitles.forEach(otherTitle => {
+          otherTitle.classList.remove('wu_news-title-active');
+        });
+        // 给当前悬停的元素添加active类，使其变红
+        this.classList.add('wu_news-title-active');
+
+        if (this.id == 'news-title-1') {
+          const news_element_1 = document.querySelector('#wu_news-info-total');
+          const news_element_2 = document.querySelector('#wu_news-info-local');
+          news_element_1.style.display = 'block';
+          news_element_2.style.display = 'none';
+        }
+
+        if (this.id == 'news-title-2') {
+          const news_element_1 = document.querySelector('#wu_news-info-total');
+          const news_element_2 = document.querySelector('#wu_news-info-local');
+          news_element_1.style.display = 'none';
+          news_element_2.style.display = 'block';
+        }
+      });
+    });
+
+
+
+
+    //第二个轮播图
+    var swiper = new Swiper('#wu_lunbo2', {
+
+      pagination: {
+        el: '.swiper-pagination-2',
+        clickable: true,
+      },
+      navigation: false,
+      autoplay: false,
+    });
+
+    //第一个轮播图
+    var mySwiper = new Swiper('#wu_lunbo', {
+      direction: 'horizontal', // 垂直切换选项
+      loop: true, // 循环模式选项
+
+      // 如果需要分页器
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // 如果需要前进后退按钮
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // 如果需要滚动条
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+
+      autoplay: {
+        delay: 3000,
+      }
+    })
+
+
+  </script>
+</body>
+
+</html>
